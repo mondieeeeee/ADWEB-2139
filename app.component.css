@@ -1,0 +1,11 @@
+body {
+    background: url(src/assets/bg1.jpg) no-repeat fixed center;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.linethrough {
+    text-decoration: line-through;
+}

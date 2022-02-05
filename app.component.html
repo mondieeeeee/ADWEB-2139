@@ -1,0 +1,81 @@
+<h1 style="text-align: center;padding: 2.5%;">LAB 4: Using Data Binding</h1>
+
+<div class="accordion" id="accordionExample" style="max-width: 60%; margin: auto; font-size: 18px;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Interpolation - String/Number
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          This is an <strong>interpolated string</strong>: {{name}}. <br>
+          This is an <strong>interpolated number</strong>: {{id}}.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Style Binding
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <span [style.font-family]="myFont" [style.text-decoration]="myStyle" [style.color]="myColor">This is some underlined text in a new font-family and a new text color applied using style binding.</span>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Property Binding
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          This is an input value embedded using <strong>property binding</strong>: 
+          <input type="text" [value]="placeholderText" />
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Class Binding
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <span [class]="appliedCSSClass">This is some text with CSS class property applied using class binding.</span><br>
+            <span [class.linethrough]="notappliedCSSClass">No CSS class property is applied in this text.</span>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Two-way Data Binding - Event/Actions
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The following are examples of two-way binding using events/actions: <br><br>
+            <ol>
+                <li><strong>Button clicking</strong></li>
+                Clicking the button will show an event in the console: &nbsp; <button (click)="showData($event)">Click here</button><br>
+                <li><strong>Inputs</strong></li>
+                Typing some text in the boxes will show an event in the console: <br>
+                <input style="margin-bottom: 10px; margin-top: 10px;" type="text" #keyupbox placeholder="keyup box" (keyup)="getData(keyupbox.value)"/>
+                &nbsp; <i>The keyup event is sent to an element when the user releases a key on the keyboard.</i><br>
+                <input style="margin-bottom: 10px;" type="text" #keyinputbox placeholder="input box" (input)="getData(keyinputbox.value)"/>
+                &nbsp; <i>The keypress event is sent to an element when the browser registers keyboard input.</i><br>
+                <input style="margin-bottom: 10px;" type="text" #keydownbox placeholder="keydown box" (keydown)="getData(keydownbox.value)"/>
+                &nbsp; <i>The keydown event is sent to an element when the user presses a key on the keyboard.</i><br>
+                <input style="margin-bottom: 10px;" type="text" #keyblurbox placeholder="blur box" (keyup)="getData(keyblurbox.value)"/>
+                &nbsp; <i>The blur event is sent to an element when it loses focus.</i><br>
+            </ol>
+          </div>
+        </div>
+    </div>
+  </div>
