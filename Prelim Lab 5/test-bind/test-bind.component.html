@@ -1,0 +1,149 @@
+<table class="CONTAINER">
+    <tr class="HEADER">
+        <td colspan="2"><div>Holy Angel<br/>University</div></td>
+    </tr>
+    <tr class="NAVTAB">
+        <td colspan="2">
+            <div class="NAVTXT">{{title}}</div>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top: 1.5%;">
+            <div class="mt-4 p-5 rounded" [style.background-color]="color2" style="max-width: 90%; margin: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);">
+                <h1 [style.color]="color1" style="font-family: Cinzel Regular;">Subject Card 1</h1>
+                <p [style.color]="color1" style="font-family: Open Sans;">Please fill out the form for your 1<sup>st</sup> subject grade computation:</p>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Student Name</span>
+                    <input type="text" class="form-control" [(ngModel)]="fName1" [placeholder]="pHolder1" required />
+                    <input type="text" class="form-control" [(ngModel)]="lName1" [placeholder]="pHolder2" required />
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Student Num.</span>
+                    <input type="text" class="form-control" [(ngModel)]="studNo1" [placeholder]="pHolder3" required />
+                </div>
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Subject Name</span>
+                    <input type="text" class="form-control" [(ngModel)]="subject1" [placeholder]="pHolder4" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Prelim</div>
+                            <input type="number" class="form-control" [(ngModel)]="prelim1" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Midterm</div>
+                            <input type="number" class="form-control" [(ngModel)]="midterm1" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Final</div>
+                            <input type="number" class="form-control" [(ngModel)]="final1" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+                </div>
+
+                <br><hr [style.color]="color1"><br>
+
+                <h1 [style.color]="color1" style="font-family: Cinzel Regular;">Card Details</h1>
+                <p [style.color]="color1" style="font-family: Open Sans;">
+                    Name: <strong>{{fName1}} {{lName1}}</strong> <br>
+                    Student Number: <strong>{{studNo1}}</strong> <br>
+                    Subject: <strong>{{subject1}}</strong> <br>
+                    Prelim Grade: <strong>{{prelim1}}</strong> <br>
+                    Midterm Grade: <strong>{{midterm1}}</strong> <br>
+                    Final Grade: <strong>{{final1}}</strong> <br><br>
+                    Average Grade for {{subject1}} = {{(prelim1+midterm1+final1)/3}}
+                </p>
+            </div>
+        </td>
+        <td style="padding-top: 1.5%;"> 
+            <div class="mt-4 p-5 rounded" [style.background-color]="color2" style="max-width: 90%; margin: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);">
+                <h1 [style.color]="color1" style="font-family: Cinzel Regular;">Subject Card 2</h1>
+                <p [style.color]="color1" style="font-family: Open Sans;">Please fill out the form for your 2<sup>nd</sup> subject grade computation:</p>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Student Name</span>
+                    <input type="text" class="form-control" [(ngModel)]="fName2" [placeholder]="pHolder1" required />
+                    <input type="text" class="form-control" [(ngModel)]="lName2" [placeholder]="pHolder2" required />
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Student Num.</span>
+                    <input type="text" class="form-control" [(ngModel)]="studNo2" [placeholder]="pHolder3" required />
+                </div>
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Subject Name</span>
+                    <input type="text" class="form-control" [(ngModel)]="subject2" [placeholder]="pHolder4" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Prelim</div>
+                            <input type="number" class="form-control" [(ngModel)]="prelim2" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Midterm</div>
+                            <input type="number" class="form-control" [(ngModel)]="midterm2" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-text">Final</div>
+                            <input type="number" class="form-control" [(ngModel)]="final2" [placeholder]="pHolder5" />
+                        </div>
+                    </div>
+                </div>
+
+                <br><hr [style.color]="color1"><br>
+
+                <h1 [style.color]="color1" style="font-family: Cinzel Regular;">Card Details</h1>
+                <p [style.color]="color1" style="font-family: Open Sans;">
+                    Name: <strong>{{fName2}} {{lName2}}</strong> <br>
+                    Student Number: <strong>{{studNo2}}</strong> <br>
+                    Subject: <strong>{{subject2}}</strong> <br>
+                    Prelim Grade: <strong>{{prelim2}}</strong> <br>
+                    Midterm Grade: <strong>{{midterm2}}</strong> <br>
+                    Final Grade: <strong>{{final2}}</strong> <br><br>
+                    Average Grade for {{subject2}} = {{(prelim2+midterm2+final2)/3}}
+                </p>
+            </div>
+        </td>
+    </tr>
+    <br><br>
+    <tr id="FOOTER">
+        <td>
+            <br>
+            <h2>Holy Angel University</h2>
+            <p>	#1 Holy Angel Avenue, Sto. Rosario<br/>
+                Angeles City, Pampanga, PH<br/>
+                (+63) 045-887-5748
+            </p>
+        </td>
+        <td id="FRIGHT">
+            <br>
+            <h2>Social</h2>
+            <a href="https://www.facebook.com/holyangel1933/" target="_blank"><img class="SOCMEDLINKS" src={{facebookIMG}} alt="facebook" /></a>&nbsp;
+            <a href="https://twitter.com/holyangel1933" target="_blank"><img class="SOCMEDLINKS" src={{twitterIMG}} alt="twitter" /></a>&nbsp;
+            <a href="https://www.instagram.com/holyangel1933/" target="_blank"><img class="SOCMEDLINKS" src={{instagramIMG}} alt="instagram" /></a>&nbsp;
+            <a href="https://www.linkedin.com/school/holyangel1933/" target="_blank"><img class="SOCMEDLINKS" src={{linkedinIMG}} alt="linkedin" /></a>&nbsp;
+            <a href="https://www.youtube.com/user/1HolyAngelUniversity" target="_blank"><img class="SOCMEDLINKS" src={{youtubeIMG}} alt="youtube" /></a><br><br>
+            <h6>&#169; 2021 Holy Angel University.<br/>All Rights Reserved.</h6>
+        </td>
+    </tr>
+</table>
