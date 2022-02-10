@@ -1,0 +1,87 @@
+<div class="container mt-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About the Organization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Join Us!</a>
+        </li>
+    </ul>
+    <div [class]="backgroundIMG">
+        <div [class]="transBox" [style.text-align]="centered" [style.font-weight]="weight">
+            <h1 [style.font-size]="heading1">Research Conferences</h1>
+            <h2 [style.font-size]="heading2">Join our online events this 2021!</h2>
+            <br><br>
+            <button type="button" class="btn btn-dark" [style.font-size]="heading3" (click)="showData($event)">Early Registration</button>
+        </div>
+    </div>
+    <hr>
+    <div [style.font-size]="heading1" [style.text-align]="centered" style="padding-top: 1%; padding-bottom: 2%;">{{description}}</div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src={{frURL}} alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">France</h4>
+                        <p class="card-text">The largest country in Western Europe, has long been a gateway between the continent's northern and southern regions.</p>
+                        <div class="card-body" style="border-top: 1px solid;">Architecture and Fine Arts</div>
+                        <div class="card-body" style="border-top: 1px solid;">Cultural Events</div>
+                        <div class="card-body" style="border-top: 1px solid; border-bottom: 1px solid;">Safety and Security</div>
+                        <br>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src={{skURL}} alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Seoul</h4>
+                        <p class="card-text">Korean Soul, formally Soul-t'ukpyolsi (Special City of Seoul), city and capital of South Korea (The Republic of Korea).</p>
+                        <div class="card-body" style="border-top: 1px solid;">Humanities and Arts</div>
+                        <div class="card-body" style="border-top: 1px solid;">Cultural Events</div>
+                        <div class="card-body" style="border-top: 1px solid; border-bottom: 1px solid;">Safety and Security</div>
+                        <br>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src={{sfURL}} alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">San Francisco</h4>
+                        <p class="card-text">It is a cultural and financial centre of the western United States and one of the country's most cosmopolitan cities.</p>
+                        <div class="card-body" style="border-top: 1px solid;">Science and Technology</div>
+                        <div class="card-body" style="border-top: 1px solid;">Cultural Events</div>
+                        <div class="card-body" style="border-top: 1px solid; border-bottom: 1px solid;">Safety and Security</div>
+                        <br>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src={{boURL}} alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Boston</h4>
+                        <p class="card-text">Best known for its famous baked beans, Fenway Park, The Boston Marathon, and of course for the bar from Cheers.</p>
+                        <div class="card-body" style="border-top: 1px solid;">Engineering and Technology</div>
+                        <div class="card-body" style="border-top: 1px solid;">Cultural Events</div>
+                        <div class="card-body" style="border-top: 1px solid; border-bottom: 1px solid;">Safety and Security</div>
+                        <br>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

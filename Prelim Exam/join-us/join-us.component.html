@@ -1,0 +1,30 @@
+<div class="container">
+    <div [style.font-size]="heading3" [style.text-align]="centered" style="padding-bottom: 2%;">{{description}}</div>
+    <div class="container" style="width: 65%; margin: auto;">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Name</span>
+            <input type="text" class="form-control" [(ngModel)]="first" placeholder="First Name" #keyinputbox1 (input)="getData(keyinputbox1.value)"/>
+            <input type="text" class="form-control" [(ngModel)]="last" placeholder="Last Name" #keyinputbox2 (input)="getData(keyinputbox2.value)"/>
+        </div>
+        <h6>Full Name: {{first}} {{last}}</h6>
+        <div class="row" style="margin-top: 3%;">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input type="text" class="form-control" [(ngModel)]="email" placeholder="someone@example.com" #keyinputbox3 (input)="getData(keyinputbox3.value)"/>
+                </div>
+                <h6>Email Add: {{email}}</h6>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Affiliation</span>
+                    <input type="text" class="form-control" [(ngModel)]="insti" placeholder="School" #keyinputbox4 (input)="getData(keyinputbox4.value)"/>
+                </div>
+                <h6>Institution: {{insti}}</h6>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+</div>

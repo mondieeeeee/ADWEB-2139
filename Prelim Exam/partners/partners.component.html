@@ -1,0 +1,24 @@
+<div class="container mt-3">
+    <div [style.font-size]="heading1" [style.text-align]="centered" style="padding-top: 1%; padding-bottom: 2%;">{{description}}</div>
+    <table class="table table-hover table-bordered" style="margin-top: 15px; max-width: 65%; margin: auto; border: 1px solid #dfdfdf;" *ngIf="displayTable">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Trademark</th>
+                <th>Sponsorship</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of companyArr">
+                <td>{{a.name}}</td>
+                <td><img src={{a.imgURL}} alt={{a.name}} style="height: 100px; width: 100px;" /></td>
+                <td>{{a.spons}}</td>
+                <td><a [target]="newTab" href={{a.webURL}}>View Website</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <hr>
+    <br><br>
+</div>

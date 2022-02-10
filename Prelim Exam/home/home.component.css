@@ -1,0 +1,11 @@
+.background1 {
+    background: url(src/assets/bldg.jpg) center;
+    padding: 2.5%;
+    margin-top: 2%;
+}
+
+.transbox1 {
+    margin: 30px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
