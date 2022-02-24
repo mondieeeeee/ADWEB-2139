@@ -1,0 +1,64 @@
+<section id="about" class="section-padding about-area" style="margin-top:5%;">
+    <div class="container" *ngIf="true">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 ">
+                <div class="section-title text-center">
+                    <h2>Product Details</h2>
+                    <p>A table that presents the different details about our products.</p>
+                    <br><br>
+                </div>
+            </div>
+            <table class="table table-hover table-bordered" style="margin-top: 15px; max-width: 80%; margin: auto; border: 1px solid #dfdfdf;">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of Products">
+                        <td><img src={{a.imgURL}} alt={{a.name}} style="height: 300px; width: auto;" /></td>
+                        <td>{{a.id}}</td>
+                        <td>{{a.name}}</td>
+                        <td>{{a.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<br><br><br><br>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a href="#"><img src="./assets/facebook-5-48.png"></a>
+  
+        <!-- Twitter -->
+        <a href="#"><img src="./assets/twitter-5-48.png"></a>
+  
+        <!-- Google -->
+        <a href="#"><img src="./assets/google-plus-5-48.png"></a>
+  
+        <!-- Instagram -->
+        <a href="#"><img src="./assets/instagram-5-48.png"></a>
+  
+        <!-- Pinterest -->
+        <a href="#"><img src="./assets/pinterest-5-48.png"></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Almond Rosos</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
