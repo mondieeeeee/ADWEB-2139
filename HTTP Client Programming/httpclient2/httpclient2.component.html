@@ -1,0 +1,16 @@
+<h1 style="text-align: center; padding: 5%;">First 10 Photos from JSONPLACEHOLDER</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm" *ngFor="let p of photos.slice(0, 10)" style="padding: 2%;">
+            <div class="card" style="width: 600px;">
+                <img class="card-img-top" src={{p.url}} />
+                <div class="card-body">
+                    <h3 class="card-title">Title: {{p.title}}</h3> <hr>
+                    <h5 class="card-text"><b>ID No.:</b> {{p.id}}</h5>
+                    <p class="card-text"><i>Photo from <b>Album No. {{p.albumId}}</b></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
