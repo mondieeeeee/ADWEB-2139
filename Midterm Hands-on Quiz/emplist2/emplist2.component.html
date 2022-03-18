@@ -1,0 +1,12 @@
+<h3>Employee Names</h3>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+    </tr>
+    <tr *ngFor="let e of employeeArr">
+        <td><b>{{e.id}}</b></td>
+        <td>{{e.firstname}} {{e.lastname}}</td>
+    </tr>
+</table>
